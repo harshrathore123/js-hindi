@@ -13,3 +13,9 @@ const ob1 = {
 };
 
 console.log(ob1.id,ob1.name,ob1.email,ob1.password);
+
+
+let username = "harsh232"
+username = "gsyrh2312"
+
+console.log(username);
