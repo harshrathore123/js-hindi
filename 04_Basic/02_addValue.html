@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Element through function js to html</title>
+</head>
+<body>
+    <script>
+        const list = document.createElement("ol");
+        list.className="list_first"
+        list.style.color="brown"
+        list.style.backgroundColor="dark-green"
+        console.log(list)
+
+        const anotherlist = document.createElement("li")
+        list.appendChild(anotherlist);
+        console.log(anotherlist);
+
+        const addText = document.createTextNode("Orange");
+        anotherlist.appendChild(addText);
+        
+        const sllist = document.querySelectorAll(".list_first")
+        console.log(sllist);
+
+        document.body.appendChild(list)
+       
+    </script>
+</body>
+</html>
