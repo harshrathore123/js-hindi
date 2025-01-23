@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add DOM in JS</title>
+</head>
+<body>
+    <script>
+
+        //ADDING THE VALUE FROM JS TO HTML
+
+        //This is one way to add DOM IN JS TO PAGE
+        
+        // const div = document.createElement("div");
+        // console.log(div);
+        // div.innerHTML = "hello world";
+        // document.body.appendChild(div);
+
+        //Second way
+
+        const ulo = document.createElement("ul");
+        console.log(ulo);
+
+        ulo.className ="Unlist";
+
+        ulo.style.color="red";
+        ulo.style.backgroundColor="green";
+        //Element enter in tag
+        const addText = document.createTextNode("Harsh Rathore Hello!")
+        ulo.appendChild(addText);
+
+        //Attaching on page 
+        document.body.appendChild(ulo)
+
+                
+    </script>
+</body>
+</html>
