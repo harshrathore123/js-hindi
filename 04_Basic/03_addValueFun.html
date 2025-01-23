@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Element through function js to html</title>
+</head>
+<body style="background-color: #212121;">
+    <script>
+        const list = document.createElement("ol");
+        list.className="list_first"
+        list.style.color="brown"
+        list.style.backgroundColor="dark-green"
+        console.log(list)
+
+        const anotherlist = document.createElement("li")
+        list.appendChild(anotherlist);
+        // console.log(anotherlist);
+
+        // for(let i=1;i<=5;i++){
+        //     const anotherlist = document.createElement("li")
+        //     list.appendChild(anotherlist);
+        //     const addText = document.createTextNode("Orange");
+        //     anotherlist.appendChild(addText);
+        // }
+       
+        const addText = document.createTextNode("Orange");
+        anotherlist.appendChild(addText);
+        
+        const sllist = document.querySelectorAll(".list_first")
+        console.log(sllist);
+
+        document.body.appendChild(list)
+
+
+        //Through function we will add many times
+        function myfunction(language){
+            const l = document.createElement("li");
+            const text = document.createTextNode(language);
+            l.appendChild(text);
+            document.querySelector(".list_first").appendChild(l)
+
+            // document.body.appendChild(l)
+        }
+        myfunction("yellow");
+        myfunction("green");
+
+    </script>
+</body>
+</html>
