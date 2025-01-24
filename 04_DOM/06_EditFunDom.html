@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT DOM</title>
+</head>
+<body>
+    <ul>
+        <li>Mango</li>
+        <li>orange</li>
+        <li>banana</li>
+        <li>papapya</li>
+    </ul>
+
+</body>
+<script>
+    //EDIT
+
+    const editdom = document.querySelector("li:nth-child(2)");
+    console.log(editdom);
+
+
+    // editdom.textContent = "Yellow"
+    // console.log(editdom);
+    
+    const list = document.createElement("li");
+    console.log(list);
+    list.textContent = "Green";
+
+    editdom.replaceWith(list);
+
+
+</script>
+
+</html>

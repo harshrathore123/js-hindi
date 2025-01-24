@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom from html and Javasciprt</title>
+</head>
+
+<body style="background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);width: 100%;height: 650px;
+">
+    <ul class="underline">
+        <li>Orange</li>
+    </ul>
+<div class="container">
+    <div class="div1" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <input type="text" placeholder="name" style="margin: 10px; padding: 10px; border-radius: 20px;text-align: center;">
+    </div>
+</div>
+    
+</body>
+
+<script>
+    //Now in this we will create once create only then we will add item with the help of selector method
+    let l = document.createElement('li');
+    let addText = document.createTextNode("Mango");
+    l.appendChild(addText);
+    document.querySelector(".underline").appendChild(l);
+
+    let i = document.createElement("input");
+    let seti = document.createTextNode(i.setAttribute("type","text"));
+    i.appendChild(seti);
+    i.style.margin="10px";
+    i.style.padding="10px";
+    i.style.borderRadius="20px";
+    i.style.textAlign="center";
+
+    let set1 = document.createTextNode(i.setAttribute("placeholder","email"));
+    i.appendChild(set1);
+    document.querySelector(".div1").appendChild(i);
+
+</script>
+</html>

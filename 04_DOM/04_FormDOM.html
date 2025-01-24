@@ -25,49 +25,66 @@
 
         //CREATE DIV AND TAKE LABEL AND INPUT
 
-        const div = document.createElement("div");
+        let div;
+        div = document.createElement("div");
         div.style.display = "flex";
-        div.style.flexDirection = "column";
+        div.style.flexDirection = "row";
         div.style.justifyContent = "center";
         div.style.alignItems = "center";
         div.style.margin = "90px";
         div.style.border = "2px solid yellow"
-        div.style.backgroundColor = "brown"
-
-
-        //This is not used becouse if we are perform so many same task so they do not accept that's why we will declare variable
-        // div.appendChild(document.createElement("input")).setAttribute("type","text");
-        // div.appendChild(document.createElement("input")).setAttribute("placeholder","FullName");
-
-
-        //TAKING INPUT TEXT THROUGH FUNTION WITH LOOP
+        div.style.backgroundColor = "brown";
+        div.style.width = "800px";
+        div.style.height = "200px"
 
         let inp;
 
-        for(let i =1;i<=5;i++){
-            inp = document.createElement("input");
-            div.appendChild(inp);
-            inp.className="input_data";
+        inp = document.createElement("input");
+        div.appendChild(inp);
+        inp.className = "input_data";
+        inp.setAttribute("type", "text");
+        inp.setAttribute("placeholder", "Fullname");
 
-            inp.style.display = "flex";
-            inp.style.flexDirection = "row";
-            inp.style.justifyContent = "center";
-            inp.style.alignItems = "center";
-            inp.style.margin = "30px";
-            inp.style.padding = "5px"
-            inp.style.width = "200px"
-        }
+        inp.style.display = "flex";
+        inp.style.flexDirection = "row";
+        inp.style.justifyContent = "center";
+        inp.style.alignItems = "center";
+        inp.style.margin = "20px";
+        inp.style.padding = "5px"
+        inp.style.width = "200px"
 
-        // function input(text1) {
+        let inp1;
 
-        //     inp.setAttribute("type", `${text1}`);
+        inp1 = document.createElement("input");
+        div.appendChild(inp1);
+        inp1.className = "input_data";
+        inp1.setAttribute("type", "text");
+        inp1.setAttribute("placeholder", "Email");
 
-        // }
+        inp1.style.display = "flex";
+        inp1.style.flexDirection = "column";
+        inp1.style.justifyContent = "center";
+        inp1.style.alignItems = "center";
+        inp1.style.margin = "20px";
+        inp1.style.padding = "5px"
+        inp1.style.width = "200px"
 
-        // for (let i = 1; i <= 5; i++) {
-        //     input("text");
 
-        // }
+        let inp2;
+
+        inp2 = document.createElement("input");
+        div.appendChild(inp2);
+        inp2.className = "input_data";
+        inp2.setAttribute("type", "text");
+        inp2.setAttribute("placeholder", "Email");
+
+        inp2.style.display = "flex";
+        inp2.style.flexDirection = "column";
+        inp2.style.justifyContent = "center";
+        inp2.style.alignItems = "center";
+        inp2.style.margin = "20px";
+        inp2.style.padding = "5px"
+        inp2.style.width = "200px"
 
 
         //TAKING INPUT PLACEHOLDER THROUGH FUNTION WITH LOOP
