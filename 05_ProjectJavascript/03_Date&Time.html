@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Date And Time Current</h1>
+
+        <div class="date" style="border: 2px solid black; border-radius: 20px; width: 190px; height: 59px; align-items: center;text-align: center;display: flex;justify-content: center;align-items: center; background-color: aqua;">
+
+        </div>
+    </div>
+</body>
+<script>
+    let dt = document.querySelector(".date");
+    
+    // dt.innerHTML = date.toLocaleTimeString();
+
+    setInterval(() => {
+        let date = new Date();
+        
+        dt.innerHTML = date.toLocaleTimeString();
+    }, 1000);
+</script>
+</html>
