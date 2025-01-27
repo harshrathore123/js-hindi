@@ -11,6 +11,7 @@ buttons.forEach((button)=>{
                 {
                     console.log(`2 * ${i} ${2*i}`);
                 }
+
                 document.body.style.backgroundColor = e.target.id;
                 break;
             
