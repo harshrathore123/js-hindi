@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Start Should change the Background color every second</h1>
+
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+
+
+
+</body>
+
+
+<script>
+
+    //Random Color
+
+    const radomcolor = ()=>{
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random()*16)];
+            
+        }
+        // console.log(color);
+        return color;
+        
+    }
+
+
+
+    //Select start and stop
+
+
+
+    let a;
+    document.querySelector(".start").addEventListener("click",()=>{
+
+        // if(!a){
+            a = setInterval(()=>{
+            document.body.style.backgroundColor = radomcolor();
+            // console.log(a);
+        },1000)
+        // }
+
+    })
+
+    document.querySelector(".stop").addEventListener("click",()=>{
+        clearInterval(a);
+        a = null;
+    })
+
+
+
+</script>
+</html>

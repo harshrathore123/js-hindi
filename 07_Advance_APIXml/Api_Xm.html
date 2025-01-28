@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Creating the object of xml http request
+
+    const xmlreq = new XMLHttpRequest();
+
+    //For request url
+    const url = "https://api.github.com/users/hiteshchoudhary"
+
+    //For sending request
+    xmlreq.open('GET',url);
+
+    // Continue state change methods:
+
+    xmlreq.onreadystatechange= ()=>{
+        console.log(xmlreq.readyState);
+
+        if(xmlreq.readyState === 4){
+
+            // JSON IS THE OBJECT IT IS USING IN APIS
+
+            const data = JSON.parse(xmlreq.responseText);
+            console.log(data);
+            console.log(data.login)
+    }
+
+}
+    xmlreq.send();
+</script>
+</html>

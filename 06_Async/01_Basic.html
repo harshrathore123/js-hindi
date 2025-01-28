@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is the part of async
+    </p>
+    <button class="btn">Click</button>
+    <p id="para"></p>
+</body>
+
+<script>
+    //First method settimeout
+    let harsh = () => {
+        console.log("Harsh");
+    }
+    setTimeout(harsh, 2000);
+
+    //It is taking reference becouse it is handler and we will use callback function directly
+
+    // document.querySelector("p").innerHTML = "This is the part of JS";
+
+    let one = ()=>{
+        document.querySelector("p").innerHTML = "This is the part of JS";
+    }
+
+    let ChangeMe = setTimeout(one,5000);
+
+    //Clear Time Out
+
+    document.querySelector(".btn").addEventListener("click",()=>{
+        clearTimeout(ChangeMe);
+
+    document.querySelector("#para").innerHTML = "Change Successfully"
+        
+    })
+</script>
+</html>

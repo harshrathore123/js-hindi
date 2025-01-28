@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is the part of javascript
+    </p>
+    <button class="btn">Click</button>
+    <p id="para"></p>
+
+
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+</body>
+
+<script>
+    // setInterval(()=>{
+    //    console.log("harsh");
+    // },1000)
+
+    let setinter = (str)=>{
+        console.log(str);
+    }
+
+    const interid = setInterval(setinter, 1000,"hi");
+    clearInterval(interid);
+let chr;
+    document.querySelector(".start").addEventListener("click",()=>{
+        chr= setInterval(()=>{
+       console.log("harsh");
+    },1000)
+    })
+
+
+    
+    document.querySelector(".stop").addEventListener("click",()=>{
+         clearInterval(chr);
+    })
+
+</script>
+</html>
