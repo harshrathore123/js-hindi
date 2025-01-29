@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin:20px;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin:80px;
+    width: 20rem;
+    border: 2px solid brown;
+    border-radius: 10px;
+    height: 12rem;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
