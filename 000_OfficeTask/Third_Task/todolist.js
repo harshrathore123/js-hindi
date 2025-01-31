@@ -10,12 +10,16 @@ let editid = null;
 
 function add(){
     const user = username.value;
+
+    //Update Part:
     if(editid!=null)
     {
         //edit
         userarr.splice(editid,1,{"user":user}); 
         editid = null; 
     }
+
+    //Add Task part
     else{
         //insert
         userarr.push({"user":user});
@@ -23,6 +27,9 @@ function add(){
 
 
     username.value = "";
+    
+
+    //Update Time Talk
     addUser.innerText = addbtntext ;
     DisplaySaveInformation();
    
@@ -35,7 +42,8 @@ function DisplaySaveInformation(){
         statement += ` <tr>
                         <th scope="row">${i+1}</th>
                         <td>${userarr[i].user}</td>
-                        <td><i class="btn text-white fa fa-edit btn-info mx-3"  onclick="EditInformation(${i})"></i><i class="btn btn-danger text-white fa fa-trash btn-info" onclick="DeleteInformation(${i})"></i></td>
+                        <td><i class="btn text-white fa fa-edit btn-info mx-3"  onclick="EditInformation(${i})"></i>
+                        <i class="btn btn-danger text-white fa fa-trash btn-info" onclick="DeleteInformation(${i})"></i></td>
                       </tr>`
     }
     recordsDisplay.innerHTML = statement;
