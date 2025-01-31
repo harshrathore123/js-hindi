@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+
+.container {
+    margin: 20px;
+    width: 1500px;
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar {
+    /* border: 2px solid brown; */
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    display: flex;
+    /* margin: 10px; */
+    padding: 20px;
+    border-radius: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+img {
+    width: 40px;
+    align-items: center;
+    right: 0;
+}
+
+.second_main_container{
+
+        margin: 20px;
+        width: 1500px;
+        height: auto;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+}
+.card-container {
+    /* border: 2px solid green; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+}
+
+.input_btn {
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 40px;
+    flex-direction: row;
+    width: 90%;
+    /* justify-content:space-between; */
+  
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+   
+}
+
+#btn {
+    width: 20%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: chartreuse;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .detail_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    border: 2px solid darkblue;
+    height: 60%;
+    align-items: center;
+} */
+
+/* #p-list{
+    font-size: 40px;
+} */
+
+/* #delete{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rosybrown;
+    border-radius: 30px;
+    width: 28%;
+    height: 29%;
+} */
+
+.detail{
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    border-radius: 40px;
+   
+}

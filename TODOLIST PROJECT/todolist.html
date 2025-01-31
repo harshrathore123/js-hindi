@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>TodoList</h1>
+            <img src="todolist image.png" alt="">
+        </div>
+    </div>
+
+    <div class="second_main_container">
+        <div class="card-container">
+            <div class="input_btn">
+                <input type="text" placeholder="Enter any Task:" value="" id="input">
+                <button id="btn" onclick="addTask()">Add To Task</button>
+            </div>
+        </div>
+
+   <div class="detail">
+        <table style="border: 2px solid black;width: 600px; text-align: center; height: auto;">
+
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
+                
+                  </tr>
+                </thead>
+                <tbody class="records">
+                 
+                </tbody>
+            
+       </table>
+        </div>
+</div>
+    
+</body>
+<script src="todolist1.js"></script>
+
+</html>
